@@ -92,6 +92,33 @@ body {
     flex: 1;
 }
 
+.main .main-information {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.main h3 {
+    font-size: 32px;
+    margin: 24px 0;
+}
+
+.main .images-div {
+    display: flex;
+    justify-content: space-between ;
+    width: 1000px;
+}
+
+.main .images-div .main-images {
+    width: 200px;
+    height: 200px;
+    border: 1px solid hotpink;
+    border-radius: 12px;
+}
+
 .footer {
     border: 1px solid red;
 }
