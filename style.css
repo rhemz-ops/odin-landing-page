@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #333;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-bar {
+    border: 1px solid greenyellow;
+}
+
+.header {
+    border: 1px solid pink;
+}
+
+.main {
+    border: 1px solid blue;
+    flex: 1;
+}
+
+.footer {
+    border: 1px solid red;
+}
