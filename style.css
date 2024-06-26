@@ -8,20 +8,26 @@
 body {
     min-height: 100vh;
     background-color: #333;
-    color: #F9FAF8;
+    color: #000;
     display: flex;
     flex-direction: column;
 }
 
 .nav-bar, .header, .footer {
-    background-color: #1F2937;
+    background-color: #3b0a25;
 }
 
+
 .nav-bar {
+    background-color: #3b0a25;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 32px;
+    padding: 16px 32px;
+}
+
+.pink, .black {
+    color: rgb(250, 68, 159);
 }
 
 .nav-bar .logo {
@@ -37,7 +43,7 @@ body {
 
 .nav-bar ul a {
     font-size: 18px;
-    color: whitesmoke;
+    color: rgb(250, 68, 159);
     text-decoration: none;
 }
 
@@ -46,6 +52,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: whitesmoke;
 }
 
 .header-alignment {
@@ -81,44 +88,118 @@ body {
 
 .header-alignment .header-image{
     flex: 1;
-    background-color: antiquewhite;
+    background-image: url("./images/bp-merchandise.jpg");
     width: 400px;
-    border-radius: 12px;
-    border: 2px solid red;
+    border: 2px solid rgb(250, 68, 159);
+    border-radius: 8px;
 }
 
 .main {
-    border: 1px solid blue;
+    background-color: #222;
     flex: 1;
+    color: whitesmoke;
 }
 
-.main .main-information {
-    margin: 0 auto;
+.main-information {
+    max-width: 1000px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 24px;
+    margin: 0 auto;
+    padding: 42px;
 }
 
-.main h3 {
-    font-size: 32px;
-    margin: 24px 0;
+.main-information h3 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 24px;
 }
 
-.main .images-div {
+.main-information .main-container {
     display: flex;
-    justify-content: space-between ;
-    width: 1000px;
+    justify-content: space-between;
 }
 
-.main .images-div .main-images {
+.main-information .main-container img {
+    border: 3px solid rgb(250, 68, 159);
+    border-radius: 16px;
     width: 200px;
     height: 200px;
-    border: 1px solid hotpink;
-    border-radius: 12px;
+    object-fit:cover;
+    object-position: top;
 }
 
+.main-information .main-container .image-container:nth-child(2) img{
+    object-position: center;
+}
+
+.main-information .main-container p {
+    text-align: center;
+    max-width: 200px;
+}
+
+.main .main-quotes {
+    background: #000;
+    padding: 72px;
+}
+
+.main-quotes .quote {
+    margin: 0 auto;
+    max-width: 1000px;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+    text-align: justify;
+    color: whitesmoke;
+}
+
+.main-quotes h4 {
+    margin: 24px auto 0;
+    max-width: 1000px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+    color:rgb(250, 68, 159);
+}
+
+.main .main-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 72px;
+}
+
+.main .main-banner .banner {
+    background-color: rgb(250, 68, 159);
+    color: whitesmoke;
+    min-width: 1000px;
+    border: 1px solid whitesmoke;
+    border-radius: 8px;
+    padding: 36px 72px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.banner h4 {
+    font-weight: 900;
+    font-size: 22px;
+}
+
+.banner button {
+    padding: 4px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    color: whitesmoke;
+    border-radius: 6px;
+    border: 2px solid whitesmoke;
+}
+
+
 .footer {
-    border: 1px solid red;
+    color: whitesmoke;
+    background-color: #3b0a25;
+    padding: 24px;
+    text-align: center;
 }
