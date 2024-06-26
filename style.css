@@ -80,7 +80,7 @@ body {
 .header-alignment .header-content button {
     padding: 8px 24px;
     font-weight: bold;
-    background-color: #3882F6;
+    background-color: rgb(250, 68, 159);
     color: #F9FAF8;
     border-radius: 6px;
     border: none;
@@ -135,6 +135,7 @@ body {
 
 .main-information .main-container p {
     text-align: center;
+    margin-top: 12px;
     max-width: 200px;
 }
 
